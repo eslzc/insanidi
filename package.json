@@ -1,0 +1,22 @@
+{
+  "name": "insanidi",
+  "version": "1.0.2",
+  "description": "Una npm muy insana",
+  "keywords": [
+    "freefire"
+  ],
+  "license": "MIT",
+  "author": "eduardote#6666 add me in discord",
+  "main": "dist-node/index.js",
+  "browser": "dist-browser/index.js",
+
+  "scripts": {
+    "build-browser": "tsc src/index.ts --outDir dist-browser  --module ES6",
+    "build-node": "tsc src/index.ts --outDir dist-node",
+    "build": "npm run build-browser & npm run build-node"
+  },
+
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
